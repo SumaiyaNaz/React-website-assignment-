@@ -1,0 +1,22 @@
+.btn{
+    background-color: #087ea4;
+    color: #ffffff;
+    width: auto;
+    height: 30px;
+    border-radius: 25px;
+    padding: 12px 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+.btn:hover{
+    background-color: #61c7e9;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn.active {
+  background-color: #62808a;
+  color: #fff;
+}
