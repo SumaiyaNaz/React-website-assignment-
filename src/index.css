@@ -1,0 +1,156 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+/* scroll shadow */
+.navbar.scrolled{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.part1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.part1 img{
+  width: 28px;
+  height: 32px;
+}
+
+.part1 a {
+    color: #5E687E;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.part1 a:hover{
+    color: #087EA4;
+    text-decoration: underline;
+}
+
+.part2 input{
+  width: 260px;        
+  max-width: 100%;
+  background-color: #99a1b333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.part2 input:focus{
+  border: 2px solid #087EA4;
+}
+
+.part3{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+}
+.part3 a{
+  color: #404756;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.part3 a:hover{
+  background-color: #f1f3f5;
+}
+
+.part4 svg{
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.part4 svg:hover{
+  background-color: #f1f3f5;
+}
+
+.menu-icon{
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px){
+  .part3{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+}
+.search-icon{
+  display: none;
+}
+
+@media (max-width: 576px){
+  .part2 input{
+    display: none;
+  }
+  .search-icon{
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 992px){
+  .part3{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    display: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  }
+
+  .part3.show{
+    display: flex;
+  }
+
+  .part3 a{
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
