@@ -313,3 +313,59 @@ body {
     height: 50px;
   }
 }
+
+/* Topics */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mycards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mytitle {
+  color: #23272F;
+  text-align: center;
+  font-size: 25px;
+}
+.mytext {
+  color: #404756;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  font-size: 18px;
+}
+
+.mycards .card {
+  border: 1px solid #d5d8e0;
+  box-shadow: 0 10px 25px rgba(44, 43, 43, 0.12);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mycards .card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 180px; 
+  object-fit: cover; 
+  width: 100%;
+}
+
+.mycards .card .card-body {
+  flex: 1;
+}
+
+.mycards .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+

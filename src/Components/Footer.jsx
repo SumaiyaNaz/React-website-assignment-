@@ -5,12 +5,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiButterflyFill } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
+import logo from '../assets/Photos/Reactlogo.jfif'
 
 const Footer = () => {
   return (
     <>
       <div className="about">
-        <img src="../Photos/Reactlogo.jfif" alt="" />
+        <img src={logo} alt="" />
         <h2 style={{ color: "#23272f", marginTop: "10px" }}>
           Welcome to the React community
         </h2>

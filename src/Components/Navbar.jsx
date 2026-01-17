@@ -6,6 +6,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { useEffect } from "react";
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
+import logo from '../assets/Photos/Reactlogo.jfif'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
     <>
       <div className="navbar fixed-top">
         <div className="part1">
-          <img src="../Photos/Reactlogo.jfif" alt="" />
+          <img src={logo} alt="" />
           <a href="https://react.dev/versions">v19.2</a>
         </div>
         <div className="part2">

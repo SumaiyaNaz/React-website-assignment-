@@ -6,6 +6,8 @@ import About from './Components/About.jsx'
 import './index.css'
 import '@fontsource/roboto'; 
 import Footer from './Components/Footer.jsx'
+import Topics from './Components/Topics.jsx'
+
 
 
 
@@ -13,7 +15,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar />
     <About />
-    <App />
+    <Topics />
     <Footer />
   </StrictMode>,
 )
